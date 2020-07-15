@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Forms</title>
+</head>
+
+<body>
+
+	<h1>체크박스</h1>
+	<p>다음 중 재밌고 내용이 알찬 강좌를 모두 골라주세요.</p>
+	<form>
+		<input type="checkbox" name="lecture" value="html" checked> HTML <br>
+		<input type="checkbox" name="lecture" value="css"> CSS <br>
+		<input type="checkbox" name="lecture" value="java"> JAVA <br>
+		<input type="checkbox" name="lecture" value="cpp" disabled> C++
+	</form>
+
+  <br>
+  <h1>라디오 버튼</h1>
+	<p>다음 중 가장 재밌고 내용이 알찬 강좌를 하나만 골라주세요.</p>
+	<form>
+		<input type="radio" name="lecture" value="html" checked> HTML <br>
+		<input type="radio" name="lecture" value="css"> CSS <br>
+		<input type="radio" name="lecture" value="java"> JAVA <br>
+		<input type="radio" name="lecture" value="cpp"> C++
+	</form>
+
+  <br>
+  <h1>비밀번호 입력</h1>
+	<form>
+		사용자 : <br>
+		<input type="text" name="username"><br>
+		비밀번호 : <br>
+		<input type="password" name="password">
+	</form>
+
+  <br>
+  <h1>파일 선택 박스</h1>
+	<p>여러분이 가장 행복했던 날의 사진을 선택해 주세요.</p>
+	<form>
+		<input type="file" name="upload_file" accept="image/*">
+	</form>
+
+  <br>
+  <h1>문장 입력</h1>
+	<p>여러분의 친구에게 하고 싶은 말을 적어보세요.</p>
+	<form>
+		<textarea name="message" rows="5" cols="30">여기에 적으세요.</textarea>
+	</form>
+
+  <br>
+  <h1>버튼 입력</h1>
+	<button type="button" onclick="alert('버튼을 클릭하셨군요!')">버튼을 눌러주세요.</button>
+
+</body>
+
+</html>
